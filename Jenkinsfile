@@ -4,12 +4,12 @@
         maven 'Maven' 
     }
         stages{
-            stage("build"){
+            stage("test"){
                 steps{
                     sh "mvn test"
                 }
             }
-            stage("test"){
+            stage("build"){
                 steps{
                     sh "mvn package"
                 }
